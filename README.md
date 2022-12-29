@@ -18,6 +18,6 @@ In Windows (Powershell):
 
 ```powershell
 $env:IMAGE_TAG = "alpine-base"
-docker build -f $env:IMAGE_TAG.dockerfile -t ofersadan85/dev:$env:IMAGE_TAG .
-docker push ofersadan85/dev:$env:IMAGE_TAG
+docker build -f "$env:IMAGE_TAG.dockerfile" -t "ofersadan85/dev:$env:IMAGE_TAG"
+docker push "ofersadan85/dev:$env:IMAGE_TAG"
 ```
