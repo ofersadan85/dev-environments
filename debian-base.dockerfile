@@ -12,6 +12,7 @@ RUN apt-get update \
     nano \
     neofetch \
     openssh-client \
+    qrencode \
     rclone \
     zsh
 

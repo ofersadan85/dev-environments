@@ -9,6 +9,7 @@ RUN apk update \
     git \
     gpg \
     jq \
+    libqrencode \
     nano \
     neofetch \
     openssh-client \
