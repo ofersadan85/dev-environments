@@ -1,0 +1,15 @@
+# Automatically merge Dependabot PRs
+name: Dependabot Auto-Merge
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    permissions:
+        pull-requests: write
+        contents: write
+    steps:
+      - name: Github Action Merge Dependabot
+        uses: fastify/github-action-merge-dependabot@v3.3.0
